@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mixify/movies/movie_home_page.dart';
 import "music/liked_songs.dart";
-import 'movies/home.dart';
 import 'package:flutter/services.dart';
 
 class Home extends StatefulWidget {
@@ -171,7 +171,7 @@ class _HomeState extends State<Home> {
                       Navigator.pop(context);
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const MovieHome())
+                        MaterialPageRoute(builder: (context) => const MovieHomePage())
                       );
                     },
                     onLongPress: () {
